@@ -2,9 +2,9 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 import json
 import re
+import os
 
-
-def stations(fname):
+def stations(fname) -> list [dict]:
     url = "https://www.metoffice.gov.uk/research/climate/maps-and-data/historic-station-data"
 
     page = urlopen(url)
@@ -18,8 +18,16 @@ def stations(fname):
             results = {}
             results["station"] = aux[0].string
             results["location"] = aux[1].string
-            results["opened"] = aux[2].string
+            results["openend"] = aux[2].string
             results["href"] = aux[3].find('a')['href']
+
+            textfile = os.path.basename(results['href'])
+            textfile = f'data/{textfile}'
+            jsonfile = textfile.replace('.txt','.json')
+    
+
+            results['text'] = textfile
+            results['json'] = jsonfile
             data.append(results)
 
     with open(fname, 'w') as f:
@@ -27,27 +35,56 @@ def stations(fname):
         
     return data
 
-def station_file(href,fname):
+def station_file(href: str,fname: str):
     page = urlopen(href)
     html = page.read().decode("utf-8")
-
     with open(fname,'w') as fw:
         fw.write(html)
     return html
 
-def station_data(fname):
-    with open(fname,'r') as fr:
+def raw_data(infile: str) -> list[str]:
+    with open(infile,'r') as fr:
         lines  = fr.readlines()
-    lines = [line for line in lines if re.match(r'^\s{3}([1-3][0-9]{3})',line)]
+    return lines
+
+def raw_html(lines: list[str]) -> list[str]:
+    lines = [x.strip() for x in lines]
+    return lines
+
+def filtered_data(infile: str) -> list [str]:
+    lines = raw_data(infile=infile)
+    return [line for line in lines if re.match(r'^\s{3}([1-3][0-9]{3})',line)]
+
+
+def save_json(fname: str, data: str) -> None:
+    with open(fname, 'w') as f:
+        json.dump(data, f,sort_keys=True,indent=4, ensure_ascii=True)
+
+def station_data(infile: str):
+    lines = filtered_data(infile=infile)
     data = []
     for line in lines:
         row = {}
-        row['year']  = int(line[:9].strip())
-        row['month'] = int(line[9:12].strip())
-        row['tmax']  = line[14:18].strip()
-        row['tmin']  = line[19:29].strip()
-        row['af']    = line[30:35].strip()
-        row['rain']  = float(line[36:43].strip())
-        row['sun']   =  line[45:].strip()
+        weather_data = line.split(' ')
+        row['year']  = weather_data[0]
+        row['month'] = weather_data[1]
+        row['tmax']  = weather_data[2]
+        row['tmin']  = weather_data[3]
+        row['af']    = weather_data[4]
+        row['rain']  = weather_data[5]
+        row['sun']   = weather_data[6]
         data.append(row)
     return data
+
+def refresh_station_data() -> dict:
+    datadir = 'data'
+    fname = f'{datadir}/station_stations.json'
+    weather_stations = stations(fname=fname)
+
+    for station in weather_stations:
+        text_fname = station['text']
+        json_fname = station['json']
+        station_file(fname=text_fname, href=station['href'])
+        data = station_data(infile=text_fname)
+        save_json(fname=json_fname,data=data)
+    return weather_stations

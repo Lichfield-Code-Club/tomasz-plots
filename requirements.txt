@@ -1,0 +1,7 @@
+beautifulsoup4 
+fastapi 
+jinja2 
+uvicorn 
+plotly 
+pandas 
+python-multipart
