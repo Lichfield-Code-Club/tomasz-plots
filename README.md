@@ -44,7 +44,7 @@ weather_data = {
 }
 
 ## To view the available 'routes'
-
+![routes](http://127.0.0.1:8000/assets/fastapi-docs.png)
 in a browser, open http://127.0.0.1:8000/docs#/
 To refresh all of the station data chose the 'GET' /refresh/data option, click on 'Try it Out' and then click on Execute.
 If all is well you should have all the weather station data in files in the data folder
