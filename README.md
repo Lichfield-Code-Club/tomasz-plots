@@ -62,15 +62,9 @@ Select these dates from Sample Weather Data
  
 Open the documentation ![web page](http://127.0.0.1:8000/docs#/)
 
-* For each of the features listed below
+* For each of the features
  * Click on GET
  * Click on Try It Out
  * Click on Execute
-
-Features
- * ![Weather Data](/assets/get-weather-data.png)
- * ![Station Data](/assets/get-station-data.png)
- * ![Select Data](/assets/get-root.png)
- * ![Plot Data](/assets/get-plot.png)
 
 If all is well you should have all the weather station data in files in the data folder
