@@ -1,0 +1,224 @@
+[
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/aberporthdata.txt",
+        "location": "-4.57, 52.139",
+        "opened": "1941",
+        "station": "Aberporth"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/armaghdata.txt",
+        "location": "-6.649, 54.352",
+        "opened": "1853",
+        "station": "Armagh"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/ballypatrickdata.txt",
+        "location": "-6.153, 55.181",
+        "opened": "1961",
+        "station": "Ballypatrick Forest"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt",
+        "location": "-1.772, 53.813",
+        "opened": "1908",
+        "station": "Bradford"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/braemardata.txt",
+        "location": "-3.396, 57.011",
+        "opened": "1959",
+        "station": "Braemar No 2"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cambornedata.txt",
+        "location": "-5.327, 50.218",
+        "opened": "1978",
+        "station": "Camborne"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cambridgedata.txt",
+        "location": "0.102, 52.245",
+        "opened": "1959",
+        "station": "Cambridge Niab"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cardiffdata.txt",
+        "location": "-3.187, 51.488",
+        "opened": "1977",
+        "station": "Cardiff Bute Park"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/chivenordata.txt",
+        "location": "-4.147, 51.089",
+        "opened": "1951",
+        "station": "Chivenor"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cwmystwythdata.txt",
+        "location": "-3.802, 52.358",
+        "opened": "1959",
+        "station": "Cwmystwyth"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/dunstaffnagedata.txt",
+        "location": "-5.439, 56.451",
+        "opened": "1971",
+        "station": "Dunstaffnage"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/durhamdata.txt",
+        "location": "-1.585, 54.768",
+        "opened": "1880",
+        "station": "Durham"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/eastbournedata.txt",
+        "location": "0.285, 50.759",
+        "opened": "1959",
+        "station": "Eastbourne"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/eskdalemuirdata.txt",
+        "location": "-3.205, 55.312",
+        "opened": "1911",
+        "station": "Eskdalemuir"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/heathrowdata.txt",
+        "location": "-0.449, 51.479",
+        "opened": "1948",
+        "station": "Heathrow"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/hurndata.txt",
+        "location": "-1.835, 50.779",
+        "opened": "1957",
+        "station": "Hurn"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/lerwickdata.txt",
+        "location": "-1.183, 60.139",
+        "opened": "1931",
+        "station": "Lerwick"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/leucharsdata.txt",
+        "location": "-2.861, 56.377",
+        "opened": "1957",
+        "station": "Leuchars"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/lowestoftdata.txt",
+        "location": "1.727, 52.483",
+        "opened": "1914",
+        "station": "Lowestoft Monckton Avenue"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/manstondata.txt",
+        "location": "1.337, 51.346",
+        "opened": "1934",
+        "station": "Manston"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/nairndata.txt",
+        "location": "-3.821, 57.593",
+        "opened": "1931",
+        "station": "Nairn Druim"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/newtonriggdata.txt",
+        "location": "-2.786, 54.67",
+        "opened": "1959",
+        "station": "Newton Rigg"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/oxforddata.txt",
+        "location": "-1.262, 51.761",
+        "opened": "1853",
+        "station": "Oxford"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/paisleydata.txt",
+        "location": "-4.43, 55.846",
+        "opened": "1959",
+        "station": "Paisley"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/ringwaydata.txt",
+        "location": "-2.279, 53.356",
+        "opened": "1946",
+        "station": "Ringway"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/rossonwyedata.txt",
+        "location": "-2.584, 51.911",
+        "opened": "1931",
+        "station": "Ross-on-wye"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/shawburydata.txt",
+        "location": "-2.663, 52.794",
+        "opened": "1946",
+        "station": "Shawbury"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/sheffielddata.txt",
+        "location": "-1.49, 53.381",
+        "opened": "1883",
+        "station": "Sheffield"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/southamptondata.txt",
+        "location": "-1.408, 50.898",
+        "opened": "1855",
+        "station": "Southampton Mayflower Park"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/stornowaydata.txt",
+        "location": "-6.318, 58.214",
+        "opened": "1873",
+        "station": "Stornoway Airport"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/suttonboningtondata.txt",
+        "location": "-1.25, 52.836",
+        "opened": "1959",
+        "station": "Sutton Bonington"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/tireedata.txt",
+        "location": "-6.88, 56.5",
+        "opened": "1928",
+        "station": "Tiree"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/valleydata.txt",
+        "location": "-4.535, 53.252",
+        "opened": "1931",
+        "station": "Valley"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/waddingtondata.txt",
+        "location": "-0.522, 53.175",
+        "opened": "1947",
+        "station": "Waddington"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/whitbydata.txt",
+        "location": "-0.624, 54.481",
+        "opened": "1961",
+        "station": "Whitby"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/wickairportdata.txt",
+        "location": "-3.088, 58.454",
+        "opened": "1914",
+        "station": "Wick Airport"
+    },
+    {
+        "href": "https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/yeoviltondata.txt",
+        "location": "-2.641, 51.006",
+        "opened": "1964",
+        "station": "Yeovilton"
+    }
+]
