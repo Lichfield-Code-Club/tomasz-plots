@@ -22,6 +22,8 @@ Graph plots from UK Met Office weather data
   * Maybe 2 lines: min temp and max temp?
 
 ## Required python modules
+pip install -r requirements.txt
+OR
 pip install beautifulsoup4 fastapi jinja2 uvicorn plotly pandas python-multipart
 
 ## To run the webserver
