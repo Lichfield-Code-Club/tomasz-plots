@@ -1,17 +1,11 @@
 # tomasz-plots
 Graph plots from UK Met Office weather data
 
-## Basic Plot
-
-* Met Ofice data
-  * Pulled from internet and saved to file
-  * Data extracted from file
-
 ## User Interface
 
 * FastApi framework
 * Met Office stations
-* Met Office data
+* Station data
 * Ask User for
   * Which year
   * Which data: rainfall, min temp, etc
@@ -49,20 +43,11 @@ Select these dates from Sample Weather Data
 ```
 
 ## Weather App Features
-
- ![Weather App API calls](/assets/fastapi-docs.png)
- 
- ![Weather Data](/assets/get-weather-data.png)
- 
- ![Station Data](/assets/get-station-data.png)
- 
- ![Select Data](/assets/get-root.png)
- 
- ![Plot Data](/assets/get-plot.png)
  
 Open the documentation ![web page](http://127.0.0.1:8000/docs#/)
 
-* For each of the features
+For each of the features
+
  * Click on GET
  * Click on Try It Out
  * Click on Execute
