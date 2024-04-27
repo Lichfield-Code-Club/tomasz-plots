@@ -22,12 +22,14 @@ def stations(fname) -> list [dict]:
             results["href"] = aux[3].find('a')['href']
 
             textfile = os.path.basename(results['href'])
+            shortname = textfile[:-8]
             textfile = f'data/{textfile}'
             jsonfile = textfile.replace('.txt','.json')
     
 
             results['text'] = textfile
             results['json'] = jsonfile
+            results['shortname'] = shortname
             data.append(results)
 
     with open(fname, 'w') as f:
@@ -55,10 +57,15 @@ def filtered_data(infile: str) -> list [str]:
     lines = raw_data(infile=infile)
     return [line for line in lines if re.match(r'^\s{3}([1-3][0-9]{3})',line)]
 
-
 def save_json(fname: str, data: str) -> None:
     with open(fname, 'w') as f:
         json.dump(data, f,sort_keys=True,indent=4, ensure_ascii=True)
+
+def read_json(fname: str) -> dict | None:
+    data = dict()
+    with open(fname, 'r') as f:
+        data = json.load(fp=f)
+    return data
 
 def station_data(infile: str):
     lines = filtered_data(infile=infile)
@@ -74,6 +81,10 @@ def station_data(infile: str):
         row['rain']  = weather_data[5]
         row['sun']   = weather_data[6]
         data.append(row)
+    return data
+
+def station_json(infile: str) -> dict:
+    data = read_json(fname=infile)
     return data
 
 def refresh_station_data() -> dict:
