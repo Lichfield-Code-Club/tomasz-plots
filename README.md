@@ -13,7 +13,7 @@ Graph plots from UK Met Office weather data
   * Display selected data
   * Maybe 2 lines: min temp and max temp?
 
-## Required python modules
+## Install Python Modules
 
 * pip install -r requirements.txt
 
