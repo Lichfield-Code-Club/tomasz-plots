@@ -3,7 +3,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from datetime import datetime
-from stations import refresh_station_data, station_data, raw_data
+from stations import refresh_station_data, station_data, raw_data,read_json
 from plot import sample_plot, template_plot
 import json
 
@@ -96,10 +96,20 @@ async def get_weather(request: Request, start_date: str = Form(...), end_date: s
 
 @app.get("/plot", response_class=HTMLResponse)
 async def plot_weather(request: Request):
+    datadir = 'data'
+    station_name= "Cardiff"
+    datafile = f'{datadir}/{station_name}data.json'
+    data = read_json(datafile)
+    data = [x.strip('\n') for x in data]
+    #return templates.TemplateResponse("json.html", {
+    #    "data": data,
+    #    "title": f'{station_name} json',
+    #    "request": request
+    #    })
     x=["a", "b", "c"]
     y=[1, 3, 2]
     # sample_plot(x,y)
-    return template_plot(x,y)
+    return template_plot(data)
 
 @app.get("/help", response_class=HTMLResponse)
 async def help(request: Request):
@@ -108,4 +118,3 @@ async def help(request: Request):
         stations = json.load(fp=fr)
     
     return templates.TemplateResponse("help.html", {"request": request, "station_list": stations})
-
